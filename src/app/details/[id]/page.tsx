@@ -1,5 +1,12 @@
+import { Metadata } from 'next';
 import styles from '@/styles/Details.module.css';
 import BackButton from '@/components/BackButton';
+
+type Props = {
+    params: {
+        id: string;
+    };
+};
 
 async function getAnime(id: string) {
     const res = await fetch(`https://api.jikan.moe/v4/anime/${id}`);
@@ -7,13 +14,7 @@ async function getAnime(id: string) {
     return data.data;
 }
 
-interface AnimeDetailsProps {
-    params: {
-        id: string;
-    };
-}
-
-export default async function AnimeDetails({ params }: AnimeDetailsProps) {
+export default async function AnimeDetails({ params }: Props) {
     const anime = await getAnime(params.id);
 
     return (
