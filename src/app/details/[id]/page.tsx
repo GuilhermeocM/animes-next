@@ -7,8 +7,11 @@ async function getAnime(id: string) {
     return data.data;
 }
 
-// Nenhuma tipagem extra aqui
-export default async function AnimeDetails({ params }: { params: { id: string } }) {
+export default async function AnimeDetails({
+    params,
+}: {
+    params: { id: string };
+}) {
     const anime = await getAnime(params.id);
 
     return (
