@@ -7,11 +7,13 @@ async function getAnime(id: string) {
     return data.data;
 }
 
-export default async function AnimeDetails({
-    params,
-}: {
-    params: { id: string };
-}) {
+interface AnimeDetailsProps {
+    params: {
+        id: string;
+    };
+}
+
+export default async function AnimeDetails({ params }: AnimeDetailsProps) {
     const anime = await getAnime(params.id);
 
     return (
