@@ -1,7 +1,7 @@
-import AnimeCard from '@/components/AnimeCard';
-import Banner from '@/components/Banner';
-import Sidebar from '@/components/Sidebar';
-import ToggleButton from '@/components/ToggleButton';
+import AnimeCard from '../components/AnimeCard';
+import Banner from '../components/Banner';
+import Sidebar from '../components/Sidebar';
+import ToggleButton from '../components/ToggleButton';
 
 export const dynamic = 'force-dynamic'; // força SSR (opcional)
 

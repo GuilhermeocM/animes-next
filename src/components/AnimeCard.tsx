@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import styles from '@/styles/AnimeCard.module.css';
+import styles from '../styles/AnimeCard.module.css';
 
 export default function AnimeCard({ anime }: { anime: any }) {
     const router = useRouter();

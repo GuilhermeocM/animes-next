@@ -1,7 +1,7 @@
-import AnimeCard from '@/components/AnimeCard';
-import Sidebar from '@/components/Sidebar';
-import Banner from '@/components/Banner';
-import ToggleButton from '@/components/ToggleButton';
+import AnimeCard from '../.././components/AnimeCard';
+import Sidebar from '../.././components/Sidebar';
+import Banner from '../.././components/Banner';
+import ToggleButton from '../.././components/ToggleButton';
 
 export const dynamic = 'force-dynamic';
 
